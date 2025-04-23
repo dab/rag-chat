@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## KEEP IT SIMPLE
+
+- The less lines of code - the better
+- Do not overthinkg
+- Use simplest solutions
+- Never write source code files longer then 200 lines, refactor if needed, extract methods

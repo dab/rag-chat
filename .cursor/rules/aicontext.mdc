@@ -1,0 +1,9 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# AI-Context
+
+- Alwats use MCP context7 for documentation calls
+- Always use web search to get latest best-practices and patterns

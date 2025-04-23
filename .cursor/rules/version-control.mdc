@@ -1,0 +1,6 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Always version control all the changes. Never change the file if it is not commited yet. Always keep track on all the actions in appropriate commits.
