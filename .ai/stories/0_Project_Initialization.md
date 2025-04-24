@@ -1,3 +1,5 @@
+Status: Complete
+
 # Epic 0: Project Initialization
 
 Story 0.1: As a developer, I want to create the project directory and initialize a Git repository so that I can manage version control.
