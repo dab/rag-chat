@@ -4,6 +4,8 @@ Chat with your PDF documents! This simple web application allows you to upload u
 
 It's designed to help researchers, professionals, and developers quickly find information within lengthy documents without manual searching. This is currently an MVP (Minimum Viable Product) focused on core functionality.
 
+![PDF RAG Chat Interface](rag-chat.png)
+
 ## ✨ Features
 
 *   ⬆️ **Multi-PDF Upload:** Upload up to 3 text-based PDF files simultaneously.
