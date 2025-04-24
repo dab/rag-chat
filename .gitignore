@@ -36,6 +36,10 @@ MANIFEST
 pip-log.txt
 pip-delete-this-directory.txt
 
+# Application Logs
+logs/
+*.log
+
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -59,6 +63,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+# FAISS Index Directory (if created accidentally)
+./faiss_index/
 
 # Spyder project settings
 .spyderproject
