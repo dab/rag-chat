@@ -7,6 +7,10 @@ langchain-community
 langchain-openai
 python-dotenv
 pytest-cov
+# PDF Processing
+pypdf>=4.0.0
+pypdf2==3.0.1
+# Testing
 selenium
 pytest-selenium
 pytest-mock
