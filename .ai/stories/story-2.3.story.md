@@ -8,7 +8,7 @@
 
 ## Status
 
-In-Progress
+Completed
 
 ## Context
 
@@ -52,9 +52,15 @@ Story Points: {Story Points}
 
 ## Story Wrap Up (To be filled in AFTER agent execution):**
 
-- **Agent Model Used:** `<Agent Model Name/Version>`
-- **Agent Credit or Cost:** `<Cost/Credits Consumed>`
-- **Date/Time Completed:** `<Timestamp>`
-- **Commit Hash:** `<Git Commit Hash of resulting code>`
+- **Agent Model Used:** `Gemini 2.5 Pro`
+- **Agent Credit or Cost:** `N/A`
+- **Date/Time Completed:** `Thu Apr 24 13:09:48 EEST 2025`
+- **Commit Hash:** `77373490237f2e9329c0e44db4e6e3a4be656605`
 - **Change Log**
-  - ... 
+  - Added `langchain-openai` and `python-dotenv` to `requirements.txt`.
+  - Created `src/generation/answer_generator.py` with RAG chain implementation (`create_rag_chain`, `generate_answer`).
+  - Integrated answer generation into `app.py`.
+  - Added error handling for generation in `app.py`.
+  - Wrote unit tests for `answer_generator.py` in `tests/test_answer_generator.py`.
+  - Refactored `create_rag_chain` to use `RunnableLambda` for better testability.
+  - Added `src/__init__.py` to fix test import issues. 
