@@ -1,0 +1,8 @@
+# .streamlit/config.toml
+
+[server]
+# Prevent watcher errors by ignoring torch internal paths (Attempt 1 - commented out)
+# folderWatchBlacklist = ['.venv/lib/python3.12/site-packages/torch']
+
+# Disable file watcher completely (Attempt 2)
+fileWatcherType = "none"

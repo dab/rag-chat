@@ -94,14 +94,16 @@ def generate_answer(query: str, retriever: VectorStore) -> Dict[str, Union[str, 
     logger.info(f"Generating answer for query: '{query[:100]}...'") # Use logger
     try:
         # Initialize the LLM (requires OPENAI_API_KEY environment variable)
-        # Check if API key exists (already checked in app.py, but belt-and-suspenders)
-        api_key = os.getenv("LANGCHAIN_API_KEY") # Replaced OPENAI_API_KEY with LANGCHAIN_API_KEY
+        # Check if the correct API key exists 
+        api_key = os.getenv("OPENAI_API_KEY") # Corrected to use OPENAI_API_KEY
         if not api_key:
-            logger.error("LANGCHAIN_API_KEY not found in environment variables.")
-            raise ValueError("Missing LANGCHAIN_API_KEY for LLM initialization.")
+            logger.error("OPENAI_API_KEY not found in environment variables.") # Corrected log message
+            # Optionally check for LANGCHAIN_API_KEY for LangSmith tracing here if needed
+            raise ValueError("Missing OPENAI_API_KEY for LLM initialization.") # Corrected error message
 
         logger.debug("Initializing ChatOpenAI LLM (gpt-3.5-turbo)...")
-        llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0, api_key=api_key) # Pass key explicitly
+        # Explicitly pass the OPENAI key 
+        llm = ChatOpenAI(model_name="gpt-3.5-turbo", temperature=0, api_key=api_key) 
         logger.debug("LLM initialized.")
 
         # Get the retriever interface from the vector store
